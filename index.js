@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cors(
   {
-      origin: ["http://localhost:5173"],
+      origin: ["https://portfolio-pi-one-12.vercel.app"],
       methods: ["POST", "GET"],
       credentials: true
   }
