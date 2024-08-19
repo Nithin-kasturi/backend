@@ -22,6 +22,9 @@ app.use(cors(
 app.get("/", (req, res) => {
     res.json("Hello");
 })
+app.post("/api/tell", (req, res) => {
+    res.json("Telling");
+})
 // Calculate cosine similarity
 function cosineSimilarity(vecA, vecB) {
   const dotProduct = vecA.reduce((sum, value, index) => sum + (value * vecB[index]), 0);
