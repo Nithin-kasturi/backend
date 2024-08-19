@@ -124,7 +124,7 @@ app.get('/api/ask', async (req, res) => {
       {
       "id": 11,
       "info": "Future objectives,goals",
-      "description": ""
+      "description": "I continually improve myself to contribute to the advancement of future generations and to spearhead the development of cutting-edge technologies that drive progress and innovation."
     },
   ]
     const sections = data.map(item => `${item.info}: ${item.description}`);
