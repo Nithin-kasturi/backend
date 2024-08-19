@@ -73,8 +73,13 @@ app.get('/api/ask', async (req, res) => {
     const data=[
     {
       "id": 1,
-      "info": "Name/details/introduction",
+      "info": "name",
       "description": "I am Nithin kasturi Experienced in full-stack development, blockchain, and machine learning projects."
+    },
+      {
+      "id": 1,
+      "info": "introduce",
+      "description": "I am Nithin Kasturi, a highly skilled and versatile individual with substantial experience in full-stack development, blockchain technology, and machine learning. I hold a B.Tech in Computer Science and Engineering from Vignan Institute of Technology and Science, where I achieved an impressive eighty percent. My technical expertise spans several programming languages, including C, C++, Java, Python, JavaScript, and Solidity. I am proficient in frameworks such as React, Node.js, and Tailwind, and I have a solid grasp of concepts like data structures, algorithms, and computer networks.."
     },
     {
       "id": 2,
@@ -104,7 +109,7 @@ app.get('/api/ask', async (req, res) => {
     {
       "id": 7,
       "info": "Coding Profiles",
-      "description": "GitHub: https://github.com/Nithin-kasturi/ \n LeetCode: https://leetcode.com/u/nithinkasturi8/"
+      "description": "GitHub: https://github.com/Nithin-kasturi/ \n LeetCode: https://leetcode.com/u/nithinkasturi8/ \n "Hackerrank: https://www.hackerrank.com/profile/nithin20891a05e5"
     },
       
       {
