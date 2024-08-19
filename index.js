@@ -73,17 +73,17 @@ app.get('/api/ask', async (req, res) => {
     const data=[
     {
       "id": 1,
-      "info": "Name,details,about,introduction",
+      "info": "Name  details  about  introduction",
       "description": "I am Nithin kasturi a Computer Science and Engineering student from Vignan Institute of Technology and Science, Hyderabad. Experienced in full-stack development, blockchain, and machine learning projects."
     },
     {
       "id": 2,
-      "info": "Education,study",
+      "info": "Education , study",
       "description": "B.Tech in Computer Science and Engineering from Vignan Institute of Technology and Science (July 2020 – July 2024) with eighty percent."
     },
     {
       "id": 3,
-      "info": "Technical Skills,languages",
+      "info": "Technical Skills , languages",
       "description": "Languages: C, C++, Java, Python, JavaScript, Solidity. Frameworks: React, Node.js, Tailwind, Redux. Concepts: Data Structures, Algorithms, OOPs, Databases, Operating Systems, TCP/IP, Computer Networks."
     },
     {
@@ -119,7 +119,7 @@ app.get('/api/ask', async (req, res) => {
     },
       {
       "id": 11,
-      "info": "Future objectives,goals",
+      "info": "Future objectives goals",
       "description": "I continually improve myself to contribute to the advancement of future generations and to spearhead the development of cutting-edge technologies that drive progress and innovation."
     },
   ]
