@@ -2,13 +2,11 @@ import express from 'express';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import dotenv from 'dotenv'; // Import dotenv for environment variables
 
-dotenv.config(); // Initialize dotenv
 
 const app = express();
 const PORT = 5000;
-const API_KEY = process.env.GOOGLE_API_KEY; // Use environment variable for API key
+const API_KEY = 'AIzaSyCHinmyQACA01wyHYvWSn2ULevRuYi6Hc0'; // Use environment variable for API key
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 app.use(bodyParser.json());
