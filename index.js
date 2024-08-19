@@ -73,7 +73,22 @@ app.get('/api/ask', async (req, res) => {
     const data=[
     {
       "id": 1,
-      "info": "Name  details  about  introduction",
+      "info": "Name",
+      "description": "I am Nithin kasturi a Computer Science and Engineering student from Vignan Institute of Technology and Science, Hyderabad. Experienced in full-stack development, blockchain, and machine learning projects."
+    },
+       {
+      "id": 1,
+      "info": "details",
+      "description": "I am Nithin kasturi a Computer Science and Engineering student from Vignan Institute of Technology and Science, Hyderabad. Experienced in full-stack development, blockchain, and machine learning projects."
+    },
+       {
+      "id": 1,
+      "info":  "introduction",
+      "description": "I am Nithin kasturi a Computer Science and Engineering student from Vignan Institute of Technology and Science, Hyderabad. Experienced in full-stack development, blockchain, and machine learning projects."
+    },
+       {
+      "id": 1,
+      "info": "about",
       "description": "I am Nithin kasturi a Computer Science and Engineering student from Vignan Institute of Technology and Science, Hyderabad. Experienced in full-stack development, blockchain, and machine learning projects."
     },
     {
