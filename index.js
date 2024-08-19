@@ -50,7 +50,7 @@ function findMostRelevantSection(sections, embeddings, questionEmbedding) {
   return bestMatch;
 }
 
-app.post('/api/ask', async (req, res) => {
+app.get('/api/ask', async (req, res) => {
   console.log('reacg')
   try {
     const { question } = req.body;
