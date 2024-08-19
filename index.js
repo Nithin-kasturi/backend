@@ -104,13 +104,9 @@ app.get('/api/ask', async (req, res) => {
     {
       "id": 7,
       "info": "Coding Profiles",
-      "description": "GitHub: https://github.com/Nithin-kasturi/ "
+      "description": "GitHub: https://github.com/Nithin-kasturi/ \n LeetCode: https://leetcode.com/u/nithinkasturi8/"
     },
-      {
-      "id": 8,
-      "info": "Coding Profiles",
-      "description": "LeetCode: https://leetcode.com/u/nithinkasturi8/ "
-    },
+      
       {
       "id": 9,
       "info": "Coding Profiles",
