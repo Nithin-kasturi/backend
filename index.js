@@ -53,7 +53,7 @@ function findMostRelevantSection(sections, embeddings, questionEmbedding) {
 app.get('/api/ask', async (req, res) => {
   console.log('reacg')
   try {
-    const { question } = req.body;
+    const { question } = req.query;
 
     if (!question) {
       return res.status(400).json({ error: 'Question is required' });
