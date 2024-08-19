@@ -22,7 +22,7 @@ app.use(cors(
 app.get("/", (req, res) => {
     res.json("Hello");
 })
-app.post("/api/tell", (req, res) => {
+app.get("/api/tell", (req, res) => {
     res.json("Telling");
 })
 // Calculate cosine similarity
