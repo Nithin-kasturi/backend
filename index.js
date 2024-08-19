@@ -76,21 +76,6 @@ app.get('/api/ask', async (req, res) => {
       "info": "Name/details/introduction",
       "description": "I am Nithin kasturi Experienced in full-stack development, blockchain, and machine learning projects."
     },
-       {
-      "id": 1,
-      "info": "details",
-      "description": "I am Nithin kasturi Experienced in full-stack development, blockchain, and machine learning projects."
-    },
-       {
-      "id": 1,
-      "info":  "introduction",
-      "description": "I am Nithin kasturi. Experienced in full-stack development, blockchain, and machine learning projects."
-    },
-       {
-      "id": 1,
-      "info": "about",
-      "description": "I am Nithin kasturi. Experienced in full-stack development, blockchain, and machine learning projects."
-    },
     {
       "id": 2,
       "info": "Education , study",
