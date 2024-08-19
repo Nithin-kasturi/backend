@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "info": "Nithin Kasturi",
+      "description": "Computer Science and Engineering student from Vignan Institute of Technology and Science, Hyderabad. Experienced in full-stack development, blockchain, and machine learning projects."
+    },
+    {
+      "id": 2,
+      "info": "Education",
+      "description": "B.Tech in Computer Science and Engineering from Vignan Institute of Technology and Science (July 2020 – July 2024) with eighty percent."
+    },
+    {
+      "id": 3,
+      "info": "Technical Skills",
+      "description": "Languages: C, C++, Java, Python, JavaScript, Solidity. Frameworks: React, Node.js, Tailwind, Redux. Concepts: Data Structures, Algorithms, OOPs, Databases, Operating Systems, TCP/IP, Computer Networks."
+    },
+    {
+      "id": 4,
+      "info": "Projects",
+      "description": "1. MERN Messenger: A full-stack chat app using MERN stack (MongoDB, Express.js, React.js, Node.js), JWT for authentication, and Socket.io for real-time messaging. 2. MRI-based Brain Tumor Detection: A machine learning project using CNNs for tumor detection. 3. Decentralized Twitter Clone: Built with React and Solidity for secure blockchain transactions. 4. Interview Insights: An application that helps job seekers by using web scraping and a custom Google search engine to gather relevant job role information, and GPT-4 API to generate tailored interview questions."
+    },
+    {
+      "id": 5,
+      "info": "Certifications",
+      "description": "1. The Joy of Computing Using Python (NPTEL). 2. Introduction to Programming through C++ (NPTEL). 3. Data Structures and Algorithms (Udemy). 4. Basics of Cloud Computing by IIT Kharagpur."
+    },
+    {
+      "id": 6,
+      "info": "Achievements",
+      "description": "1. Qualified and participated in Hackathon 2023. 2. Institute Rank 2 on GeeksforGeeks. 3. Won prizes in coding competitions."
+    },
+    {
+      "id": 7,
+      "info": "Coding Profiles",
+      "description": "GitHub: https://github.com/Nithin-kasturi/ | LeetCode: https://leetcode.com/u/nithinkasturi8/ | Hackerrank: https://www.hackerrank.com/profile/nithin20891a05e5"
+    },
+    {
+      "id": 8,
+      "info": "LinkedIn",
+      "description": "https://www.linkedin.com/in/kasturi-nithin-142935242"
+    },
+    {
+      "id": 9,
+      "info": "Portfolio",
+      "description": "https://portfolio-pi-one-12.vercel.app/"
+    }
+  ]
