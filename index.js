@@ -73,38 +73,23 @@ app.get('/api/ask', async (req, res) => {
     const data=[
     {
       "id": 1,
-      "info": "Name/details/introduction",
-      "description": "I am Nithin kasturi Experienced in full-stack development, blockchain, and machine learning projects."
-    },
-       {
-      "id": 1,
-      "info": "details",
-      "description": "I am Nithin kasturi Experienced in full-stack development, blockchain, and machine learning projects."
-    },
-       {
-      "id": 1,
-      "info":  "introduction",
-      "description": "I am Nithin kasturi. Experienced in full-stack development, blockchain, and machine learning projects."
-    },
-       {
-      "id": 1,
-      "info": "about",
-      "description": "I am Nithin kasturi. Experienced in full-stack development, blockchain, and machine learning projects."
+      "info": "Nithin Kasturi",
+      "description": "Computer Science and Engineering student from Vignan Institute of Technology and Science, Hyderabad. Experienced in full-stack development, blockchain, and machine learning projects."
     },
     {
       "id": 2,
-      "info": "Education , study",
+      "info": "Education",
       "description": "B.Tech in Computer Science and Engineering from Vignan Institute of Technology and Science (July 2020 – July 2024) with eighty percent."
     },
     {
       "id": 3,
-      "info": "Technical Skills , languages",
+      "info": "Technical Skills",
       "description": "Languages: C, C++, Java, Python, JavaScript, Solidity. Frameworks: React, Node.js, Tailwind, Redux. Concepts: Data Structures, Algorithms, OOPs, Databases, Operating Systems, TCP/IP, Computer Networks."
     },
     {
       "id": 4,
       "info": "Projects",
-      "description": "1. MERN Messenger: A full-stack chat app using MERN stack (MongoDB, Express.js, React.js, Node.js), JWT for authentication, and Socket.io for real-time messaging. 2. Decentralized Twitter Clone: Built with React and Solidity for secure blockchain transactions. 3. Interview Insights: An application that helps job seekers by using web scraping and a custom Google search engine to gather relevant job role information, and GPT-4 API to generate tailored interview questions.4.Book Store:The MERN-based Book Reviews project enables users to explore, read, and contribute reviews seamlessly. Leveraging MongoDB, Express.js, React, and Node.js, it ensures a dynamic, interactive, and secure platform."
+      "description": "1. MERN Messenger: A full-stack chat app using MERN stack (MongoDB, Express.js, React.js, Node.js), JWT for authentication, and Socket.io for real-time messaging. 2. MRI-based Brain Tumor Detection: A machine learning project using CNNs for tumor detection. 3. Decentralized Twitter Clone: Built with React and Solidity for secure blockchain transactions. 4. Interview Insights: An application that helps job seekers by using web scraping and a custom Google search engine to gather relevant job role information, and GPT-4 API to generate tailored interview questions."
     },
     {
       "id": 5,
@@ -119,26 +104,20 @@ app.get('/api/ask', async (req, res) => {
     {
       "id": 7,
       "info": "Coding Profiles",
-      "description": "GitHub: https://github.com/Nithin-kasturi/ \n LeetCode: https://leetcode.com/u/nithinkasturi8/"
-    },
-      
-      {
-      "id": 9,
-      "info": "Coding Profiles",
-      "description": "Hackerrank: https://www.hackerrank.com/profile/nithin20891a05e5"
+      "description": "GitHub: https://github.com/Nithin-kasturi/ | LeetCode: https://leetcode.com/u/nithinkasturi8/ | Hackerrank: https://www.hackerrank.com/profile/nithin20891a05e5"
     },
     {
-      "id": 10,
+      "id": 8,
       "info": "LinkedIn",
       "description": "https://www.linkedin.com/in/kasturi-nithin-142935242"
     },
-      {
-      "id": 11,
-      "info": "Future objectives goals",
-      "description": "I continually improve myself to contribute to the advancement of future generations and to spearhead the development of cutting-edge technologies that drive progress and innovation."
-    },
+    {
+      "id": 9,
+      "info": "Portfolio",
+      "description": "https://portfolio-pi-one-12.vercel.app/"
+    }
   ]
-    const sections = data.map(item => ${item.info}: ${item.description});
+    const sections = data.map(item => `${item.info}: ${item.description}`);
 
     // Embed each section of the data
     const embeddings = await Promise.all(sections.map(async (section) => {
@@ -158,5 +137,5 @@ app.get('/api/ask', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(Server is running on port ${PORT});
+  console.log(`Server is running on port ${PORT}`);
 });
