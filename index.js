@@ -11,9 +11,9 @@ const API_KEY = 'AIzaSyCHinmyQACA01wyHYvWSn2ULevRuYi6Hc0'; // Use environment va
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 // Twilio credentials
-const TWILIO_ACCOUNT_SID = 'ACacf91485a3f050a50dc5f9094cef9700';  // Replace with your Twilio Account SID
-const TWILIO_AUTH_TOKEN = '685448bc0db746dfef7bff0ce54186c2';    // Replace with your Twilio Auth Token
-const TWILIO_PHONE_NUMBER = '+14845149918'; // Replace with your Twilio phone number
+const TWILIO_ACCOUNT_SID = 'ACa0bf61147639c70db9c7aa53a70d536f';  // Replace with your Twilio Account SID
+const TWILIO_AUTH_TOKEN = '2d4fccd3dbc9f0c1b6b50eb576d8ace4';    // Replace with your Twilio Auth Token
+const TWILIO_PHONE_NUMBER = '+12566176053'; // Replace with your Twilio phone number
 const RECIPIENT_PHONE_NUMBER = '+919502863501'; // Replace with the phone number you want to receive SMS
 
 const client = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
