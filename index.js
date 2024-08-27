@@ -12,7 +12,7 @@ const genAI = new GoogleGenerativeAI(API_KEY);
 
 // Twilio credentials
 const TWILIO_ACCOUNT_SID = 'ACacf91485a3f050a50dc5f9094cef9700';  // Replace with your Twilio Account SID
-const TWILIO_AUTH_TOKEN = '2db260b961ca54e44836b85c8ca7af7c';    // Replace with your Twilio Auth Token
+const TWILIO_AUTH_TOKEN = '685448bc0db746dfef7bff0ce54186c2';    // Replace with your Twilio Auth Token
 const TWILIO_PHONE_NUMBER = '+14845149918'; // Replace with your Twilio phone number
 const RECIPIENT_PHONE_NUMBER = '+919502863501'; // Replace with the phone number you want to receive SMS
 
