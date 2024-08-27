@@ -2,16 +2,25 @@ import express from 'express';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-
+import twilio from 'twilio';
+import useragent from 'useragent';
 
 const app = express();
 const PORT = 5000;
 const API_KEY = 'AIzaSyCHinmyQACA01wyHYvWSn2ULevRuYi6Hc0'; // Use environment variable for API key
 const genAI = new GoogleGenerativeAI(API_KEY);
 
+// Twilio credentials
+const TWILIO_ACCOUNT_SID = 'ACacf91485a3f050a50dc5f9094cef9700';  // Replace with your Twilio Account SID
+const TWILIO_AUTH_TOKEN = '2db260b961ca54e44836b85c8ca7af7c';    // Replace with your Twilio Auth Token
+const TWILIO_PHONE_NUMBER = '+14845149918'; // Replace with your Twilio phone number
+const RECIPIENT_PHONE_NUMBER = '+919502863501'; // Replace with the phone number you want to receive SMS
+
+const client = twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
+
+app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
 app.use(cors({
   origin: ["https://portfolio-pi-one-12.vercel.app"],
   methods: ["POST", "GET"],
@@ -24,6 +33,26 @@ app.get("/", (req, res) => {
 
 app.get("/api/tell", (req, res) => {
     res.json("Telling");
+});
+
+app.post('/track-visit', (req, res) => {
+  const agent = useragent.parse(req.body.userAgent);
+  const deviceDetails = `
+    Device: ${agent.device.toString()}
+    OS: ${agent.os.toString()}
+    Browser: ${agent.toAgent()}
+  `;
+
+  // Send SMS via Twilio
+  client.messages.create({
+    body: `Your portfolio was visited! \n\nDetails:\n${deviceDetails}\nReferrer: ${req.body.referrer}`,
+    from: TWILIO_PHONE_NUMBER,
+    to: RECIPIENT_PHONE_NUMBER
+  })
+  .then(message => console.log('SMS sent: ' + message.sid))
+  .catch(error => console.error('Error sending SMS:', error));
+
+  res.sendStatus(200);
 });
 
 // Calculate cosine similarity
