@@ -55,6 +55,29 @@ app.post('/track-visit', (req, res) => {
   res.sendStatus(200);
 });
 
+app.post('/send-sms', (req, res) => {
+  const { name, email, message } = req.body;
+
+  if (!name || !email || !message) {
+    return res.status(400).json({ error: 'All fields are required' });
+  }
+
+  // Send SMS via Twilio
+  client.messages.create({
+    body: `New message from ${name} (${email}): ${message}`,
+    from: TWILIO_PHONE_NUMBER,
+    to: RECIPIENT_PHONE_NUMBER
+  })
+  .then(message => {
+    console.log('SMS sent: ' + message.sid);
+    res.status(200).json({ success: true });
+  })
+  .catch(error => {
+    console.error('Error sending SMS:', error);
+    res.status(500).json({ error: 'Failed to send SMS' });
+  });
+});
+
 // Calculate cosine similarity
 function cosineSimilarity(vecA, vecB) {
   const dotProduct = vecA.reduce((sum, value, index) => sum + (value * vecB[index]), 0);
