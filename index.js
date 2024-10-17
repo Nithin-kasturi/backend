@@ -7,7 +7,7 @@ import useragent from 'useragent';
 
 const app = express();
 const PORT = 5000;
-const API_KEY = 'AIzaSyCHinmyQACA01wyHYvWSn2ULevRuYi6Hc0'; // Use environment variable for API key
+const API_KEY = 'AIzaSyCHinmyQACA01wyHYvWSn2ULevRuYi6Hc0'; // Environment variable for API key
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 // Twilio credentials
