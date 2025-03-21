@@ -128,7 +128,7 @@ app.get('/api/ask', async (req, res) => {
       {
         "id": 1,
         "info": "introduce",
-        "description": "I am Nithin Kasturi, a highly skilled and versatile individual with substantial experience in full-stack development, blockchain technology, and machine learning. I hold a B.Tech in Computer Science and Engineering from Vignan Institute of Technology and Science, where I achieved an impressive eighty percent. My technical expertise spans several programming languages, including C, C++, Java, Python, JavaScript, and Solidity. I am proficient in frameworks such as React, Node.js, and Tailwind, and I have a solid grasp of concepts like data structures, algorithms, and computer networks."
+        "description": "I am Nithin Kasturi, a highly skilled and versatile individual with substantial experience in full-stack development, Devops CICD. I hold a B.Tech in Computer Science and Engineering from Vignan Institute of Technology and Science, where I achieved an impressive eighty percent. My technical expertise spans several programming languages, including C, C++, Java, Python, JavaScript, Docker, Kubernetes, Jenkins. I am proficient in frameworks such as React, Node.js, and Tailwind, and I have a solid grasp of concepts like data structures, algorithms, and computer networks."
       },
       {
         "id": 2,
@@ -143,7 +143,7 @@ app.get('/api/ask', async (req, res) => {
       {
         "id": 4,
         "info": "Projects",
-        "description": "1. MERN Messenger: A full-stack chat app using MERN stack (MongoDB, Express.js, React.js, Node.js), JWT for authentication, and Socket.io for real-time messaging. 2. Decentralized Twitter Clone: Built with React and Solidity for secure blockchain transactions. 3. Interview Insights: An application that helps job seekers by using web scraping and a custom Google search engine to gather relevant job role information, and GPT-4 API to generate tailored interview questions. 4. Book Store: The MERN-based Book Reviews project enables users to explore, read, and contribute reviews seamlessly. Leveraging MongoDB, Express.js, React, and Node.js, it ensures a dynamic, interactive, and secure platform."
+        "description": "1. MERN Messenger: A full-stack chat app using MERN stack (MongoDB, Express.js, React.js, Node.js), JWT for authentication, and Socket.io for real-time messaging. 2. Devops on MERN Application: This projects is about automating the process of building, deploying and monitoring a three tier application by using devops tools. 3. Automate Provisioning EC2 with Terraform: This Terraform configuration sets up an AWS infrastructure, including a VPC, subnet, internet gateway, security group, and EC2 instance. 4. Book Store: The MERN-based Book Reviews project enables users to explore, read, and contribute reviews seamlessly. Leveraging MongoDB, Express.js, React, and Node.js, it ensures a dynamic, interactive, and secure platform."
       },
       {
         "id": 5,
@@ -163,7 +163,7 @@ app.get('/api/ask', async (req, res) => {
       {
         "id": 10,
         "info": "LinkedIn",
-        "description": "https://www.linkedin.com/in/kasturi-nithin-142935242"
+        "description": "https://www.linkedin.com/in/nithin-kasturi/"
       },
       {
         "id": 11,
