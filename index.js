@@ -123,7 +123,7 @@ app.get('/api/ask', async (req, res) => {
       {
         "id": 1,
         "info": "name",
-        "description": "I am Nithin kasturi Experienced in full-stack development, blockchain, and machine learning projects."
+        "description": "I am Nithin kasturi Experienced in full-stack development, and Devops."
       },
       {
         "id": 1,
@@ -138,7 +138,7 @@ app.get('/api/ask', async (req, res) => {
       {
         "id": 3,
         "info": "Technical Skills, languages",
-        "description": "Languages: C, C++, Java, Python, JavaScript, Solidity. Frameworks: React, Node.js, Tailwind, Redux. Concepts: Data Structures, Algorithms, OOPs, Databases, Operating Systems, TCP/IP, Computer Networks."
+        "description": "Languages: C, C++, Java, Python, JavaScript, Solidity. Frameworks: React, Node.js, Tailwind, Redux. Concepts: Data Structures, Algorithms, OOPs, Databases, Operating Systems, TCP/IP, Computer Networks, Devops Tools: Kubernetes, Jenkins, Docker, Terraform."
       },
       {
         "id": 4,
