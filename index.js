@@ -26,6 +26,13 @@ app.get("/", (req, res) => {
 app.get("/api/tell", (req, res) => {
     res.json("Telling");
 });
+const transporter = nodemailer.createTransport({
+  service: 'gmail', // or use another SMTP provider
+  auth: {
+    user: 'nithinkasturi8@gmail.com',
+    pass: process.env.gmail_pass // or use OAuth2 for better security
+  }
+});
 
 app.post('/send-sms', (req, res) => {
   const { name, email, message } = req.body;
