@@ -30,7 +30,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail', // or use another SMTP provider
   auth: {
     user: 'nithinkasturi8@gmail.com',
-    pass: process.env.gmail_pass // or use OAuth2 for better security
+    pass: 'Nithin@9502' // or use OAuth2 for better security
   }
 });
 
