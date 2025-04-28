@@ -27,7 +27,7 @@ app.get("/api/tell", (req, res) => {
     res.json("Telling");
 });
 
-app.post('/send-message', (req, res) => {
+app.post('/send-sms', (req, res) => {
   const { name, email, message } = req.body;
 
   if (!name || !email || !message) {
